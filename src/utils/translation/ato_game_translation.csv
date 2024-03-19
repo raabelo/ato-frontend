@@ -1,0 +1,63 @@
+keys,en_US,pt_BR
+VERSION,Anomaly: The Oblivion .beta snapshot 1.0,Anomaly: The Oblivion .beta snapshot 1.0
+COPYRIGHT,©raabelo™ 2024 do not distribute,©raabelo™ 2024 não distribua
+,,
+YES,yes,sim
+NO,no,não
+,,
+MENU_PLAY,Play,Jogar
+MENU_HOME,Home,Home
+MENU_COLLECTION,Collection,Collection
+MENU_PACKS,Packs,Pacotes
+MENU_STORE,Store,Loja
+,,
+,,
+,,
+,,
+PRE_LANG,language,idioma
+PRE_CONFIRM,confirm,aceitar
+,,
+SETTINGS,settings,configurações
+TABGENERAL,general,geral
+SETTINGS_AUDIO,audio,áudio
+SETTINGS_MUSIC,music,música
+SETTINGS_SOUND,sound fx,efeiros sonoros
+SETTINGS_SCREEN,screen,tela
+SETTINGS_FULLSCREEN,fullscreen,tela cheia
+SETTINGS_LANG,language,idioma
+CLICK_LANG,clique na bandeira,please click on the flag
+,,
+TABCONTROLS,controls,controles
+COMMANDS,commands,comandos
+BTN_RIGHT,right,certo
+BTN_LEFT,left,esquerda
+BTN_JUMP,jump,pular
+BTN_ATTACK,attack,atacar
+BTN_SKILL,skill,habilidade
+BTN_SPELL1,spell 1,feitiço 1
+BTN_SPELL2,spell 2,feitiço 2
+BTN_SPELL3,spell 3,feitiço 3
+BTN_POTION,potion,poção
+BTN_INVENTORY,inventory,inventário
+BTN_INTERACT,interact,interagir
+BTN_CANCEL,cancel,cancelar
+BTN_PAUSE,pause,pausar
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+TABHELP,help,ajuda
+,,
+,,
+SETTINGS_APPLY,apply,aplicar
+SETTINGS_BACK,back,voltar
+,,
+,,
+,,

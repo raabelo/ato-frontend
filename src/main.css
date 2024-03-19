@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 90deg;
+    inherits: true;
+}
+
+@property --gradX {
+    syntax: "<percentage>";
+    initial-value: 50%;
+    inherits: true;
+}
+
+@property --gradY {
+    syntax: "<percentage>";
+    initial-value: 0%;
+    inherits: true;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+    /* cursor: none; */
+}
+
+:root {
+    font-family: "Century Gothic", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --d: 2500ms;
+    --angle: 90deg;
+    --gradX: 100%;
+    --gradY: 50%;
+    --c1: rgba(168, 239, 255, 1);
+    --c2: rgba(168, 239, 255, 0.1);
+}
+
+*::-webkit-scrollbar {
+    width: 0.45rem; /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0); /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #cdb990; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 1px solid rgba(0, 0, 0, 1); /* creates padding around scroll thumb */
+}
+
+body {
+    display: flex;
+    place-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#root {
+    width: 100svw;
+    height: 100svh;
+}
+
+#root > div {
+    width: 100%;
+    height: 100%;
+}
+
+#root > * > div.menu-content {
+    padding-top: 5rem;
+}
+
+.perspective-card {
+    transform: perspective(65rem) rotateX(19deg);
+    /* transform-style: preserve-3d; */
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.box {
+    border-radius: 0.5rem;
+    border-image: conic-gradient(
+            from var(--angle),
+            var(--c2),
+            var(--c1) 0.1turn,
+            var(--c1) 0.15turn,
+            var(--c2) 0.25turn
+        )
+        30;
+    animation: borderRotate var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+    100% {
+        --angle: 420deg;
+    }
+}
+
+@keyframes borderRadial {
+    20% {
+        --gradX: 100%;
+        --gradY: 50%;
+    }
+    40% {
+        --gradX: 100%;
+        --gradY: 100%;
+    }
+    60% {
+        --gradX: 50%;
+        --gradY: 100%;
+    }
+    80% {
+        --gradX: 0%;
+        --gradY: 50%;
+    }
+    100% {
+        --gradX: 50%;
+        --gradY: 0%;
+    }
+}
